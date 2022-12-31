@@ -32,7 +32,7 @@ Unraid Setup Guide: https://metamanager.wiki/en/latest/home/guides/unraid.html</
   <Category>Tools:Utilities Status:Stable</Category>
   <WebUI/>
   <TemplateURL>https://github.com/meisnate12/Plex-Meta-Manager-Unraid-Templates/master/Plex-Meta-Manager/Plex-Meta-Manager.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager/master/docs/pmm.pnghttps://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager/master/docs/_static/favicon.png</Icon>
+  <Icon>https://raw.githubusercontent.com/meisnate12/Plex-Meta-Manager/master/docs/_static/favicon.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
