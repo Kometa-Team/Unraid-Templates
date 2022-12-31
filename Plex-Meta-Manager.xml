@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>Plex-Meta-Manager</Name>
-  <Repository>meisnate12/Plex-Meta-Manager</Repository>
+  <Repository>meisnate12/plex-meta-manager</Repository>
   <Registry>https://hub.docker.com/r/meisnate12/plex-meta-manager</Registry>
   <Network>bridge</Network>
   <MyIP/>
