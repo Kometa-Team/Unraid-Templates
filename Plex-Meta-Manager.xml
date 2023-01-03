@@ -42,6 +42,7 @@ Unraid Setup Guide: https://metamanager.wiki/en/latest/home/guides/unraid.html</
   <Requires/>
   <Config Name="Config Directory" Target="/config" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/Plex-Meta-Manager/</Config>
   <Config Name="Configuration File (--config)" Target="PMM_CONFIG" Default="" Mode="" Description="Specify the location of the configuration YAML file." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Run Immediately (--run)" Target="PMM_RUN" Default="" Mode="" Description="Set as 'true' to perform a run immediately, bypassing the time to run flag." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Time to Run (--time)" Target="PMM_TIME" Default="" Mode="" Description="Specify the times of day that Plex Meta Manager will run with comma-separated list of times in HH:MM format." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Run Tests (--run-tests)" Target="PMM_TEST" Default="" Mode="" Description="Set as 'true' to perform a debug test run immediately, bypassing the time to run flag. This will only run collections with test: true in the definition." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Debug (--debug)" Target="PMM_DEBUG" Default="" Mode="" Description="Set as 'true' to run with Debug Logs Reporting to the Command Window." Type="Variable" Display="advanced" Required="false" Mask="false"/>
