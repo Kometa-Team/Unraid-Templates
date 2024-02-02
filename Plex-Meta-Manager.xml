@@ -8,8 +8,8 @@
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support>https://github.com/meisnate12/Plex-Meta-Manager/issues/new/choose</Support>
-  <Project>https://metamanager.wiki/en/latest/index.html</Project>
-  <ReadMe>https://metamanager.wiki/en/latest/home/installation.html</ReadMe>
+  <Project>https://metamanager.wiki/en/latest/home/</Project>
+  <ReadMe>https://metamanager.wiki/en/latest/pmm/install/overview/</ReadMe>
   <Branch>
     <Tag>latest</Tag>
     <TagDescription>Latest Stable Plex Meta Manager Release</TagDescription>
@@ -17,18 +17,18 @@
   <Branch>
     <Tag>develop</Tag>
     <TagDescription>Development Releases from Plex Meta Manager</TagDescription>
-    <Project>https://metamanager.wiki/en/develop/index.html</Project>
-    <ReadMe>https://metamanager.wiki/en/develop/home/installation.html</ReadMe>
+    <Project>https://metamanager.wiki/en/develop/home/</Project>
+    <ReadMe>https://metamanager.wiki/en/develop/pmm/install/overview/</ReadMe>
   </Branch>
   <Branch>
     <Tag>nightly</Tag>
     <TagDescription>Nightly Releases from Plex Meta Manager</TagDescription>
-    <Project>https://metamanager.wiki/en/nightly/index.html</Project>
-    <ReadMe>https://metamanager.wiki/en/nightly/home/installation.html</ReadMe>
+    <Project>https://metamanager.wiki/en/nightly/home/</Project>
+    <ReadMe>https://metamanager.wiki/en/nightly/pmm/install/overview/</ReadMe>
   </Branch>
   <Overview>Plex Meta Manager is an open source Python 3 project that has been designed to ease the creation and maintenance of metadata, collections, and playlists within a Plex Media Server. The script is designed to be run continuously and be able to update information based on sources outside your plex environment. Plex Meta Manager supports Movie/TV/Music libraries and Playlists.&#xD;
 &#xD;
-Unraid Setup Guide: https://metamanager.wiki/en/latest/home/guides/unraid.html</Overview>
+Unraid Setup Guide: https://metamanager.wiki/en/latest/pmm/install/unraid/</Overview>
   <Category>Tools:Utilities Status:Stable</Category>
   <WebUI/>
   <TemplateURL>https://github.com/meisnate12/Plex-Meta-Manager-Unraid-Templates/master/Plex-Meta-Manager/Plex-Meta-Manager.xml</TemplateURL>
@@ -41,24 +41,24 @@ Unraid Setup Guide: https://metamanager.wiki/en/latest/home/guides/unraid.html</
   <DonateLink>https://github.com/sponsors/meisnate12</DonateLink>
   <Requires/>
   <Config Name="Config Directory" Target="/config/" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/Plex-Meta-Manager/</Config>
-  <Config Name="Configuration File (--config)" Target="PMM_CONFIG" Default="" Mode="" Description="Specify the location of the configuration YAML file." Type="Variable" Display="advanced" Required="false" Mask="false"/>
-  <Config Name="Run Immediately (--run)" Target="PMM_RUN" Default="" Mode="" Description="Set as 'true' to perform a run immediately, bypassing the time to run flag." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Config Location (--config)" Target="PMM_CONFIG" Default="" Mode="" Description="Specify the location of the configuration YAML file." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Time to Run (--time)" Target="PMM_TIME" Default="" Mode="" Description="Specify the times of day that Plex Meta Manager will run with comma-separated list of times in HH:MM format." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Run Immediately (--run)" Target="PMM_RUN" Default="" Mode="" Description="Set as 'true' to perform a run immediately, bypassing the time to run flag." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Run Tests (--run-tests)" Target="PMM_TEST" Default="" Mode="" Description="Set as 'true' to perform a debug test run immediately, bypassing the time to run flag. This will only run collections with test: true in the definition." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Debug (--debug)" Target="PMM_DEBUG" Default="" Mode="" Description="Set as 'true' to run with Debug Logs Reporting to the Command Window." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Trace (--trace)" Target="PMM_TRACE" Default="" Mode="" Description="Set as 'true' to run with extra Trace Debug Logs." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Log Requests (--log-requests)" Target="PMM_LOG_REQUESTS" Default="" Mode="" Description="Set as 'true' to run with every network request printed to the Logs. This can potentially have personal information in it." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Timeout (--timeout)" Target="PMM_TIMEOUT" Default="" Mode="" Description="Change the main Plex Meta Manager timeout. This timeout is overwritten by those in your config file for those services." Type="Variable" Display="advanced" Required="false" Mask="false"/>
-  <Config Name="Collections Only (--collections-only)" Target="PMM_COLLECTIONS_ONLY" Default="" Mode="" Description="Set as 'true' to only run collection metadata/YAML files, skip library operations, overlays, and playlists." Type="Variable" Display="advanced" Required="false" Mask="false"/>
-  <Config Name="Playlists Only (--playlists-only)" Target="PMM_PLAYLISTS_ONLY" Default="" Mode="" Description="Set as 'true' to only run playlist metadata/YAML files, skip library operations, overlays, and collections/metadata." Type="Variable" Display="advanced" Required="false" Mask="false"/>
-  <Config Name="Operation Only (--operations)" Target="PMM_OPERATIONS" Default="" Mode="" Description="Set as 'true' to only run library operations skipping collections/metadata, playlists, and overlays." Type="Variable" Display="advanced" Required="false" Mask="false"/>
-  <Config Name="Overlay Only (--overlays)" Target="PMM_OVERLAYS" Default="" Mode="" Description="Set as 'true' to only run library overlays skipping collections/metadata, playlists, and operations." Type="Variable" Display="advanced" Required="false" Mask="false"/>
-  <Config Name="Run Collections (--run-collections)" Target="PMM_COLLECTIONS" Default="" Mode="" Description="Will immediately run the comma-separated list of Collection Names given, bypassing the time to run flag." Type="Variable" Display="advanced" Required="false" Mask="false"/>
-  <Config Name="Run Libraries (--run-libraries)" Target="PMM_LIBRARIES" Default="" Mode="" Description="Will immediately run the comma-separated list of Library Names given, bypassing the time to run flag." Type="Variable" Display="advanced" Required="false" Mask="false"/>
-  <Config Name="Run Metadata Files (--run-metadata-files)" Target="PMM_METADATA_FILES" Default="" Mode="" Description="Will immediately run the comma-separated list of Metadata File Names given, bypassing the time to run flag." Type="Variable" Display="advanced" Required="false" Mask="false"/>
-  <Config Name="Libraries First (--libraries-first)" Target="PMM_LIBRARIES_FIRST" Default="" Mode="" Description="Set as 'true' to run library operations prior to running collections." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Collections Only (--collections-only)" Target="PMM_COLLECTIONS_ONLY" Default="" Mode="" Description="Set as 'true' to only run collection files, skip metadata, library operations, overlays, and playlists." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Metadata Only (--metadata-only)" Target="PMM_METADATA_ONLY" Default="" Mode="" Description="Set as 'true' to only run metadata files, skip library operations, overlays, playlists, and collections." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Playlists Only (--playlists-only)" Target="PMM_PLAYLISTS_ONLY" Default="" Mode="" Description="Set as 'true' to only run playlist files, skip metadata, library operations, overlays, and collections." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Operations Only (--operations-only)" Target="PMM_OPERATIONS)ONLY" Default="" Mode="" Description="Set as 'true' to only run library operations skipping metadata, collections, playlists, and overlays." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Overlays Only (--overlays-only)" Target="PMM_OVERLAYS_ONLY" Default="" Mode="" Description="Set as 'true' to only run library overlays skipping metadata, collections, playlists, and library operations." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Run Collections (--run-collections)" Target="PMM_RUN_COLLECTIONS" Default="" Mode="" Description="Will immediately run the comma-separated list of Collection Names given, bypassing the time to run flag." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Run Libraries (--run-libraries)" Target="PMM_RUN_LIBRARIES" Default="" Mode="" Description="Will immediately run the comma-separated list of Library Names given, bypassing the time to run flag." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Run Files (--run-files)" Target="PMM_RUN_FILES" Default="" Mode="" Description="Will immediately run the comma-separated list of File Names given, bypassing the time to run flag." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Ignore Schedules (--ignore-schedules)" Target="PMM_IGNORE_SCHEDULES" Default="" Mode="" Description="Set as 'true' to ignore all schedules for the run." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Ignore Ghost (--ignore-ghost)" Target="PMM_IGNORE_GHOST" Default="" Mode="" Description="Set as 'true' to ignore all ghost logging for the run. A ghost log is what’s printed to the console to show progress during steps." Type="Variable" Display="advanced" Required="false" Mask="false"/>
-  <Config Name="Cache Libraries (--cache-libraries)" Target="PMM_CACHE_LIBRARIES" Default="" Mode="" Description="Set as 'true' to cache the library Load for 1 day." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Delete Collections (--delete-collections)" Target="PMM_DELETE_COLLECTIONS" Default="" Mode="" Description="Set as 'true' to delete all collections in a Library prior to running collections/operations." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Delete Labels (--delete-labels)" Target="PMM_DELETE_LABELS" Default="" Mode="" Description="Set as 'true' to delete all labels on every item in a Library prior to running collections/operations." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Resume Run (--resume)" Target="PMM_RESUME" Default="" Mode="" Description="Name of Collection to immediately resume running from the first instance of the specified collection, bypassing the time to run flag." Type="Variable" Display="advanced" Required="false" Mask="false"/>
@@ -66,8 +66,8 @@ Unraid Setup Guide: https://metamanager.wiki/en/latest/home/guides/unraid.html</
   <Config Name="No Missing (--no-missing)" Target="PMM_NO_MISSING" Default="" Mode="" Description="Set as 'true' to run without utilizing the missing movie/show functions." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="No Report (--no-report)" Target="PMM_NO_REPORT" Default="" Mode="" Description="Set as 'true' to run without saving the report." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Read Only Config (--read-only-config)" Target="PMM_READ_ONLY_CONFIG" Default="" Mode="" Description="Set as 'true' to run without writing to the configuration file." Type="Variable" Display="advanced" Required="false" Mask="false"/>
-  <Config Name="ENV Plex URL (--plex-url)" Target="PMM_PLEX_URL" Default="" Mode="" Description="Plex URL to replace ENV in the config file." Type="Variable" Display="advanced" Required="false" Mask="false"/>
-  <Config Name="ENV Plex Token (--plex-token)" Target="PMM_PLEX_TOKEN" Default="" Mode="" Description="Plex Token to replace ENV in the config file." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Divider Character (--divider)" Target="PMM_DIVIDER" Default="" Mode="" Description="Character to use as a divider in the logs." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Screen Width (--width)" Target="PMM_WIDTH" Default="" Mode="" Description="Width of the Log Output. Integer between 90 and 300." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="ENV Plex URL (--plex-url)" Target="PMM_PLEX_URL" Default="" Mode="" Description="Plex URL to replace ENV in the config file." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="ENV Plex Token (--plex-token)" Target="PMM_PLEX_TOKEN" Default="" Mode="" Description="Plex Token to replace ENV in the config file." Type="Variable" Display="advanced" Required="false" Mask="false"/>
 </Container>
