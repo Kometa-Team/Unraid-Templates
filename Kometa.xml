@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Kometa</Name>
+  <Repository>meisnate12/kometa</Repository>
+  <Registry>https://hub.docker.com/r/meisnate12/kometa</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/meisnate12/Kometa/issues/new/choose</Support>
+  <Project>https://metamanager.wiki/en/latest/home/</Project>
+  <ReadMe>https://metamanager.wiki/en/latest/kometa/install/overview/</ReadMe>
+  <Branch>
+    <Tag>latest</Tag>
+    <Tag>latest</Tag>
+    <TagDescription>Latest Stable Kometa Release</TagDescription>
+  </Branch>
+  <Branch>
+    <Tag>develop</Tag>
+    <TagDescription>Development Releases from Kometa</TagDescription>
+    <Project>https://metamanager.wiki/en/develop/home/</Project>
+    <ReadMe>https://metamanager.wiki/en/develop/kometa/install/overview/</ReadMe>
+  </Branch>
+  <Branch>
+    <Tag>nightly</Tag>
+    <TagDescription>Nightly Releases from Kometa</TagDescription>
+    <Project>https://metamanager.wiki/en/nightly/home/</Project>
+    <ReadMe>https://metamanager.wiki/en/nightly/kometa/install/overview/</ReadMe>
+  </Branch>
+  <Overview>Kometa is an open source Python 3 project that has been designed to ease the creation and maintenance of metadata, collections, and playlists within a Plex Media Server. The script is designed to be run continuously and be able to update information based on sources outside your plex environment. Kometa supports Movie/TV/Music libraries and Playlists.&#xD;
+&#xD;
+Unraid Setup Guide: https://metamanager.wiki/en/latest/kometa/install/unraid/</Overview>
+  <Category>Tools:Utilities Status:Stable</Category>
+  <WebUI/>
+  <TemplateURL>https://github.com/meisnate12/Kometa-Unraid-Templates/master/Kometa/Kometa.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/meisnate12/Kometa/master/docs/_static/favicon.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1672339714</DateInstalled>
+  <DonateText>Support the Kometa Developer!</DonateText>
+  <DonateLink>https://github.com/sponsors/meisnate12</DonateLink>
+  <Requires/>
+  <Config Name="Config Directory" Target="/config/" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/Kometa/</Config>
+  <Config Name="Config Location (--config)" Target="KOMETA_CONFIG" Default="" Mode="" Description="Specify the location of the configuration YAML file." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Time to Run (--time)" Target="KOMETA_TIME" Default="" Mode="" Description="Specify the times of day that Kometa will run with comma-separated list of times in HH:MM format." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Run Immediately (--run)" Target="KOMETA_RUN" Default="" Mode="" Description="Set as 'true' to perform a run immediately, bypassing the time to run flag." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Run Tests (--run-tests)" Target="KOMETA_TEST" Default="" Mode="" Description="Set as 'true' to perform a debug test run immediately, bypassing the time to run flag. This will only run collections with test: true in the definition." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Debug (--debug)" Target="KOMETA_DEBUG" Default="" Mode="" Description="Set as 'true' to run with Debug Logs Reporting to the Command Window." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Trace (--trace)" Target="KOMETA_TRACE" Default="" Mode="" Description="Set as 'true' to run with extra Trace Debug Logs." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Log Requests (--log-requests)" Target="KOMETA_LOG_REQUESTS" Default="" Mode="" Description="Set as 'true' to run with every network request printed to the Logs. This can potentially have personal information in it." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Timeout (--timeout)" Target="KOMETA_TIMEOUT" Default="" Mode="" Description="Change the main Kometa timeout. This timeout is overwritten by those in your config file for those services." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Collections Only (--collections-only)" Target="KOMETA_COLLECTIONS_ONLY" Default="" Mode="" Description="Set as 'true' to only run collection files, skip metadata, library operations, overlays, and playlists." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Metadata Only (--metadata-only)" Target="KOMETA_METADATA_ONLY" Default="" Mode="" Description="Set as 'true' to only run metadata files, skip library operations, overlays, playlists, and collections." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Playlists Only (--playlists-only)" Target="KOMETA_PLAYLISTS_ONLY" Default="" Mode="" Description="Set as 'true' to only run playlist files, skip metadata, library operations, overlays, and collections." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Operations Only (--operations-only)" Target="KOMETA_OPERATIONS)ONLY" Default="" Mode="" Description="Set as 'true' to only run library operations skipping metadata, collections, playlists, and overlays." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Overlays Only (--overlays-only)" Target="KOMETA_OVERLAYS_ONLY" Default="" Mode="" Description="Set as 'true' to only run library overlays skipping metadata, collections, playlists, and library operations." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Run Collections (--run-collections)" Target="KOMETA_RUN_COLLECTIONS" Default="" Mode="" Description="Will immediately run the comma-separated list of Collection Names given, bypassing the time to run flag." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Run Libraries (--run-libraries)" Target="KOMETA_RUN_LIBRARIES" Default="" Mode="" Description="Will immediately run the comma-separated list of Library Names given, bypassing the time to run flag." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Run Files (--run-files)" Target="KOMETA_RUN_FILES" Default="" Mode="" Description="Will immediately run the comma-separated list of File Names given, bypassing the time to run flag." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Ignore Schedules (--ignore-schedules)" Target="KOMETA_IGNORE_SCHEDULES" Default="" Mode="" Description="Set as 'true' to ignore all schedules for the run." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Ignore Ghost (--ignore-ghost)" Target="KOMETA_IGNORE_GHOST" Default="" Mode="" Description="Set as 'true' to ignore all ghost logging for the run. A ghost log is what’s printed to the console to show progress during steps." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Delete Collections (--delete-collections)" Target="KOMETA_DELETE_COLLECTIONS" Default="" Mode="" Description="Set as 'true' to delete all collections in a Library prior to running collections/operations." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Delete Labels (--delete-labels)" Target="KOMETA_DELETE_LABELS" Default="" Mode="" Description="Set as 'true' to delete all labels on every item in a Library prior to running collections/operations." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Resume Run (--resume)" Target="KOMETA_RESUME" Default="" Mode="" Description="Name of Collection to immediately resume running from the first instance of the specified collection, bypassing the time to run flag." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="No Countdown (--no-countdown)" Target="KOMETA_NO_COUNTDOWN" Default="" Mode="" Description="Set as 'true' to run without displaying a countdown to the next scheduled run." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="No Missing (--no-missing)" Target="KOMETA_NO_MISSING" Default="" Mode="" Description="Set as 'true' to run without utilizing the missing movie/show functions." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="No Report (--no-report)" Target="KOMETA_NO_REPORT" Default="" Mode="" Description="Set as 'true' to run without saving the report." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Read Only Config (--read-only-config)" Target="KOMETA_READ_ONLY_CONFIG" Default="" Mode="" Description="Set as 'true' to run without writing to the configuration file." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Divider Character (--divider)" Target="KOMETA_DIVIDER" Default="" Mode="" Description="Character to use as a divider in the logs." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Screen Width (--width)" Target="KOMETA_WIDTH" Default="" Mode="" Description="Width of the Log Output. Integer between 90 and 300." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="ENV Plex URL (--plex-url)" Target="KOMETA_PLEX_URL" Default="" Mode="" Description="Plex URL to replace ENV in the config file." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="ENV Plex Token (--plex-token)" Target="KOMETA_PLEX_TOKEN" Default="" Mode="" Description="Plex Token to replace ENV in the config file." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+</Container>
