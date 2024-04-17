@@ -32,7 +32,7 @@
 Unraid Setup Guide: https://kometa.wiki/en/latest/kometa/install/unraid/</Overview>
   <Category>Tools:Utilities Status:Stable</Category>
   <WebUI/>
-  <TemplateURL>https://github.com/kometa-Team/Kometa-Unraid-Templates/master/Kometa/Kometa.xml</TemplateURL>
+  <TemplateURL>https://github.com/kometa-team/Unraid-Templates/master/Kometa/Kometa.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/kometa-Team/Kometa/master/docs/_static/favicon.png</Icon>
   <ExtraParams/>
   <PostArgs/>
