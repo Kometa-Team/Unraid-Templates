@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>Kometa</Name>
-  <Repository>kometa-team/kometa</Repository>
-  <Registry>https://hub.docker.com/r/kometa-team/kometa</Registry>
+  <Repository>kometateam/kometa</Repository>
+  <Registry>https://hub.docker.com/r/kometateam/kometa</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://github.com/kometa-Team/Kometa/issues/new/choose</Support>
+  <Support>https://github.com/Kometa-Team/Kometa/issues/new/choose</Support>
   <Project>https://kometa.wiki/en/latest/home/</Project>
   <ReadMe>https://kometa.wiki/en/latest/kometa/install/overview/</ReadMe>
   <Branch>
@@ -32,8 +32,8 @@
 Unraid Setup Guide: https://kometa.wiki/en/latest/kometa/install/unraid/</Overview>
   <Category>Tools:Utilities Status:Stable</Category>
   <WebUI/>
-  <TemplateURL>https://github.com/kometa-team/Unraid-Templates/master/Kometa/Kometa.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/kometa-Team/Kometa/master/docs/_static/favicon.png</Icon>
+  <TemplateURL>https://github.com/Kometa-Team/Unraid-Templates/master/Kometa/Kometa.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/Kometa-Team/Kometa/master/docs/_static/favicon.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
