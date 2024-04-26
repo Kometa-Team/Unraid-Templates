@@ -41,7 +41,7 @@ Unraid Setup Guide: https://kometa.wiki/en/latest/kometa/install/unraid/</Overvi
   <DonateText>Support the Kometa Developer!</DonateText>
   <DonateLink>https://github.com/sponsors/meisnate12</DonateLink>
   <Requires/>
-  <Config Name="Config Directory" Target="/config/" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/Kometa/</Config>
+  <Config Name="Config Directory" Target="/config" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/Kometa/</Config>
   <Config Name="Config Location (--config)" Target="KOMETA_CONFIG" Default="" Mode="" Description="Specify the location of the configuration YAML file." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Time to Run (--time)" Target="KOMETA_TIME" Default="" Mode="" Description="Specify the times of day that Kometa will run with comma-separated list of times in HH:MM format." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Run Immediately (--run)" Target="KOMETA_RUN" Default="" Mode="" Description="Set as 'true' to perform a run immediately, bypassing the time to run flag." Type="Variable" Display="advanced" Required="false" Mask="false"/>
