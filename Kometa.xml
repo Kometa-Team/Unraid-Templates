@@ -8,7 +8,7 @@
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support>https://github.com/Kometa-Team/Kometa/issues/new/choose</Support>
-  <Project>https://kometa.wiki/en/latest/home/</Project>
+  <Project>https://kometa.wiki/en/latest/</Project>
   <ReadMe>https://kometa.wiki/en/latest/kometa/install/overview/</ReadMe>
   <Branch>
     <Tag>latest</Tag>
@@ -17,13 +17,13 @@
   <Branch>
     <Tag>develop</Tag>
     <TagDescription>Development Releases from Kometa</TagDescription>
-    <Project>https://kometa.wiki/en/develop/home/</Project>
+    <Project>https://kometa.wiki/en/develop/</Project>
     <ReadMe>https://kometa.wiki/en/develop/kometa/install/overview/</ReadMe>
   </Branch>
   <Branch>
     <Tag>nightly</Tag>
     <TagDescription>Nightly Releases from Kometa</TagDescription>
-    <Project>https://kometa.wiki/en/nightly/home/</Project>
+    <Project>https://kometa.wiki/en/nightly/</Project>
     <ReadMe>https://kometa.wiki/en/nightly/kometa/install/overview/</ReadMe>
   </Branch>
   <Overview>Kometa is an open source Python 3 project that has been designed to ease the creation and maintenance of metadata, collections, and playlists within a Plex Media Server. The script is designed to be run continuously and be able to update information based on sources outside your plex environment. Kometa supports Movie/TV/Music libraries and Playlists.&#xD;
