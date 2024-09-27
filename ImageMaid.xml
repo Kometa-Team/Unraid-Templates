@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>ImageMaid</Name>
+  <Repository>kometateam/imagemaid</Repository>
+  <Registry>https://hub.docker.com/r/kometateam/imagemaid</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/Kometa-Team/ImageMaid/issues/new/choose</Support>
+  <Project>https://kometa.wiki/en/latest/</Project>
+  <ReadMe>https://kometa.wiki/en/latest/kometa/scripts/imagemaid/</ReadMe>
+  <Branch>
+    <Tag>latest</Tag>
+    <TagDescription>Latest Stable ImageMaid Release</TagDescription>
+  </Branch>
+  <Branch>
+    <Tag>develop</Tag>
+    <TagDescription>Development Releases from ImageMaid</TagDescription>
+    <Project>https://kometa.wiki/en/develop/</Project>
+    <ReadMe>https://kometa.wiki/en/develop/kometa/scripts/imagemaid/</ReadMe>
+  </Branch>
+
+  <Overview>ImageMaid is a script developed by the Kometa team. This tool is designed to help manage and clean up Plex directories by removing unused overlays, custom artwork, and clearing the PhotoTranscoder Directory. It also automates Plex maintenance tasks like emptying trash, cleaning bundles, and optimizing the database.</Overview>
+  <Category>Tools:Utilities Status:Stable</Category>
+  <WebUI/>
+  <TemplateURL>https://github.com/Kometa-Team/Unraid-Templates/blob/master/ImageMaid.xml<TemplateURL>
+  <Icon>https://raw.githubusercontent.com/Kometa-Team/ImageMaid/refs/heads/develop/.github/logo.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1727383014</DateInstalled>
+  <DonateText>Support the Kometa Developer!</DonateText>
+  <DonateLink>https://github.com/sponsors/meisnate12</DonateLink>
+  <Requires/>
+  <Config Name="Config Directory" Target="/config" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/Overlay-Reset/</Config>
+  <Config Name="Plex Config Directory" Target="/plex" Default="" Mode="rw" Description="Plex Config Directory containing the servers Metadata including Cache, Metadata, and Plug-in Support folders." Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="Plex Config Directory (--plex)" Target="PLEX_PATH" Default="" Mode="" Description="Can set the Plex Config Directory if its not mapped to /plex." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Mode (--mode)" Target="MODE" Default="report" Mode="" Description="How ImageMaid runs depends on the Mode Option that's currently set for that run. \nOptions: report, move, restore, clear, remove, nothing." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Plex URL (--url)" Target="PLEX_URL" Default="" Mode="" Description="Plex URL for downloading the Database from the Plex API." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Plex Token (--token)" Target="PLEX_TOKEN" Default="" Mode="" Description="Plex Token for downloading the Database from the Plex API." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Use Local Database (--local)" Target="LOCAL_DB" Default="False" Mode="" Description="Use the local /plex directory to grab the database. \nOptions: True, False" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Ignore Runnng (--ignore)" Target="IGNORE_RUNNING" Default="False" Mode="" Description="Allows a run while the database is currently in use. \nOptions: True, False" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Use Existing (--existing)" Target="USE_EXISTING" Default="False" Mode="" Description="Use previously downloaded or copied database can be used if it's less than 2 hours old. \nOptions: True, False" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Photo Transcoder (--photo-transcoder)" Target="PHOTO_TRANSCODER" Default="False" Mode="" Description="Also clean then PhotoTranscoder Directory. \nOptions: True, False" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Empty Trash (--empty-trash)" Target="EMPTY_TRASH" Default="False" Mode="" Description="Also run the Empty Trash Plex Operation. \nOptions: True, False" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Clean Bundles (--clean-bundles)" Target="CLEAN_BUNDLES" Default="False" Mode="" Description="Also run the Clean Bundles Plex Operation. \nOptions: True, False" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Optimize DB (--optimize-db)" Target="OPTIMIZE_DB" Default="False" Mode="" Description="Also run the Optimize DB Plex Operation. \nOptions: True, False" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Discord URL (--discord)" Target="DISCORD" Default="False" Mode="" Description="Discord Webhook URL to send notifications to." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Timeout (--timeout)" Target="TIMEOUT" Default="600" Mode="" Description="Connection Timeout in seconds that's greater than 0." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Sleep (--sleep)" Target="SLEEP" Default="60" Mode="" Description="Sleep Timer between Empty Trash, Clean Bundles, and Optimize DB in seconds that's greater than 0." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Trace (--trace)" Target="TRACE" Default="False" Mode="" Description="Run with extra trace logs. \nOptions: True, False" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Log Requests (--log-requests)" Target="LOG_REQUESTS" Default="False" Mode="" Description="Run with every request and file action logged. \nOptions: True, False" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Continuous Schedule (--schedule)" Target="SCHEDULE" Default="" Mode="" Description="See https://kometa.wiki/en/latest/kometa/scripts/imagemaid/#continuous-schedule for how to schedule." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+</Container>
