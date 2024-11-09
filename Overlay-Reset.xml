@@ -24,7 +24,7 @@
   <Overview>Kometa Overlay Reset is a Python tool created to remove all overlays applied to a Plex library by Kometa, using methods that are not available within Kometa itself. It's typically needed when the original backup posters used by Kometa to remove overlays have been lost.</Overview>
   <Category>Tools:Utilities Status:Stable</Category>
   <WebUI/>
-  <TemplateURL>https://github.com/Kometa-Team/Unraid-Templates/blob/master/Overlay-Reset.xml<TemplateURL>
+  <TemplateURL>https://github.com/Kometa-Team/Unraid-Templates/blob/master/Overlay-Reset.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/Kometa-Team/Overlay-Reset/refs/heads/develop/.github/logo.png</Icon>
   <ExtraParams/>
   <PostArgs/>
