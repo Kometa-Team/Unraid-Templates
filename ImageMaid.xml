@@ -24,7 +24,7 @@
   <Overview>ImageMaid is a script developed by the Kometa team. This tool is designed to help manage and clean up Plex directories by removing unused overlays, custom artwork, and clearing the PhotoTranscoder Directory. It also automates Plex maintenance tasks like emptying trash, cleaning bundles, and optimizing the database.</Overview>
   <Category>Tools:Utilities Status:Stable</Category>
   <WebUI/>
-  <TemplateURL>https://github.com/Kometa-Team/Unraid-Templates/blob/master/ImageMaid.xml<TemplateURL>
+  <TemplateURL>https://github.com/Kometa-Team/Unraid-Templates/blob/master/ImageMaid.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/Kometa-Team/ImageMaid/refs/heads/develop/.github/logo.png</Icon>
   <ExtraParams/>
   <PostArgs/>
