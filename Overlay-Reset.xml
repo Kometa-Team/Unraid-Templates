@@ -4,7 +4,6 @@
   <Repository>kometateam/overlay-reset</Repository>
   <Registry>https://hub.docker.com/r/kometateam/overlay-reset</Registry>
   <Network>bridge</Network>
-  <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support>https://github.com/Kometa-Team/Overlay-Reset/issues/new/choose</Support>
@@ -20,16 +19,10 @@
     <Project>https://kometa.wiki/en/develop/</Project>
     <ReadMe>https://kometa.wiki/en/develop/kometa/scripts/overlay-reset/</ReadMe>
   </Branch>
-
   <Overview>Kometa Overlay Reset is a Python tool created to remove all overlays applied to a Plex library by Kometa, using methods that are not available within Kometa itself. It's typically needed when the original backup posters used by Kometa to remove overlays have been lost.</Overview>
   <Category>Tools:Utilities Status:Stable</Category>
-  <WebUI/>
-  <TemplateURL>https://github.com/Kometa-Team/Unraid-Templates/blob/master/Overlay-Reset.xml<TemplateURL>
+  <TemplateURL>https://github.com/Kometa-Team/Unraid-Templates/blob/master/Overlay-Reset.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/Kometa-Team/Overlay-Reset/refs/heads/develop/.github/logo.png</Icon>
-  <ExtraParams/>
-  <PostArgs/>
-  <CPUset/>
-  <DateInstalled>1727383014</DateInstalled>
   <DonateText>Support the Kometa Developer!</DonateText>
   <DonateLink>https://github.com/sponsors/meisnate12</DonateLink>
   <Requires/>
@@ -46,12 +39,12 @@
   <Config Name="Items (--items)" Target="ITEMS" Default="" Mode="" Description="Restore specific Plex Items by Title. Can use a bar-separated (|) list." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Labels (--labels)" Target="LABELS" Default="" Mode="" Description="Additional labels to remove. Can use a bar-separated (|) list." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Timeout (--timeout)" Target="TIMEOUT" Default="600" Mode="" Description="Connection Timeout in seconds that's greater than 0." Type="Variable" Display="advanced" Required="false" Mask="false"/>
-  <Config Name="Dry Run (--dry)" Target="DRY_RUN" Default="" Mode="" Description="Run as a Dry Run without making changes in Plex. \nOptions: True, False" Type="Variable" Display="advanced" Required="false" Mask="false"/>
-  <Config Name="Flat Assets (--flat)" Target="KOMETA_FLAT" Default="" Mode="" Description="Kometa Asset Folder uses Flat Assets Image Paths. https://kometa.wiki/en/latest/home/guides/assets.html#asset-naming \nOptions: True, False" Type="Variable" Display="advanced" Required="false" Mask="false"/>
-  <Config Name="Reset Main Posters (--no-main)" Target="NO_MAIN" Default="" Mode="" Description="Do not restore Main Show/Movie posters during run. \nOptions: True, False" Type="Variable" Display="advanced" Required="false" Mask="false"/>
-  <Config Name="Reset Season Posters (--season)" Target="SEASON" Default="" Mode="" Description="Restore Season posters during run. \nOptions: True, False" Type="Variable" Display="advanced" Required="false" Mask="false"/>
-  <Config Name="Reset Episode Posters (--episode)" Target="EPISODE" Default="" Mode="" Description="Restore Episode posters during run. \nOptions: True, False" Type="Variable" Display="advanced" Required="false" Mask="false"/>
-  <Config Name="Ignore Automatic Resume (--ignore-resume)" Target="IGNORE_RESUME" Default="" Mode="" Description="Ignores the automatic resume. \nOptions: True, False" Type="Variable" Display="advanced" Required="false" Mask="false"/>
-  <Config Name="Trace (--trace)" Target="TRACE" Default="False" Mode="" Description="Run with extra trace logs. \nOptions: True, False" Type="Variable" Display="advanced" Required="false" Mask="false"/>
-  <Config Name="Log Requests (--log-requests)" Target="LOG_REQUESTS" Default="False" Mode="" Description="Run with every request and file action logged. \nOptions: True, False" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Dry Run (--dry)" Target="DRY_RUN" Default="False|True" Mode="" Description="Run as a Dry Run without making changes in Plex." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Flat Assets (--flat)" Target="KOMETA_FLAT" Default="False|True" Mode="" Description="Kometa Asset Folder uses Flat Assets Image Paths. https://kometa.wiki/en/latest/home/guides/assets.html#asset-naming" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Reset Main Posters (--no-main)" Target="NO_MAIN" Default="False|True" Mode="" Description="Do not restore Main Show/Movie posters during run." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Reset Season Posters (--season)" Target="SEASON" Default="False|True" Mode="" Description="Restore Season posters during run." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Reset Episode Posters (--episode)" Target="EPISODE" Default="False|True" Mode="" Description="Restore Episode posters during run." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Ignore Automatic Resume (--ignore-resume)" Target="IGNORE_RESUME" Default="False|True" Mode="" Description="Ignores the automatic resume." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Trace (--trace)" Target="TRACE" Default="False|True" Mode="" Description="Run with extra trace logs." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="Log Requests (--log-requests)" Target="LOG_REQUESTS" Default="False|True" Mode="" Description="Run with every request and file action logged." Type="Variable" Display="advanced" Required="false" Mask="false"/>
 </Container>
