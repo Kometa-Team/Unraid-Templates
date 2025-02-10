@@ -39,6 +39,7 @@
   <Config Name="Items (--items)" Target="ITEMS" Default="" Mode="" Description="Restore specific Plex Items by Title. Can use a bar-separated (|) list." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Labels (--labels)" Target="LABELS" Default="" Mode="" Description="Additional labels to remove. Can use a bar-separated (|) list." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Timeout (--timeout)" Target="TIMEOUT" Default="600" Mode="" Description="Connection Timeout in seconds that's greater than 0." Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="No Verify SSL (--no-verify-ssl)" Target="NO_VERIFY_SSL" Default="False|True" Mode="" Description="Turn SSL Verification off." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Dry Run (--dry)" Target="DRY_RUN" Default="False|True" Mode="" Description="Run as a Dry Run without making changes in Plex." Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Flat Assets (--flat)" Target="KOMETA_FLAT" Default="False|True" Mode="" Description="Kometa Asset Folder uses Flat Assets Image Paths. https://kometa.wiki/en/latest/home/guides/assets.html#asset-naming" Type="Variable" Display="advanced" Required="false" Mask="false"/>
   <Config Name="Reset Main Posters (--no-main)" Target="NO_MAIN" Default="False|True" Mode="" Description="Do not restore Main Show/Movie posters during run." Type="Variable" Display="advanced" Required="false" Mask="false"/>
