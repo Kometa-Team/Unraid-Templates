@@ -30,7 +30,7 @@
 Unraid Setup Guide: https://kometa.wiki/en/latest/kometa/install/unraid/</Overview>
   <Category>Tools:Utilities Status:Stable</Category>
   <TemplateURL>https://github.com/Kometa-Team/Unraid-Templates/blob/master/Kometa.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/Kometa-Team/Kometa/nightly/docs/_static/logomark-color.png</Icon>
+  <Icon>https://raw.githubusercontent.com/Kometa-Team/Kometa/refs/heads/master/docs/assets/images/icons/logomark-color.png</Icon>
   <DonateText>Support the Kometa Developer!</DonateText>
   <DonateLink>https://github.com/sponsors/meisnate12</DonateLink>
   <Config Name="Config Directory" Target="/config" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/Kometa/</Config>
